@@ -10,10 +10,12 @@ Finding classical paths in such a way becomes cumbersome if the motion happens i
 <img src="http://latex.codecogs.com/svg.latex?\begin{bmatrix}&space;\theta_1&t_1&space;&space;\\\theta_2&space;&t_2&space;&space;\\&space;&&space;&space;\\&space;&&space;&space;\\&space;\theta_n&t_n&space;&space;\\\end{bmatrix},\begin{bmatrix}x_t(E,\theta_1,t_1)&space;&&space;y_t(E,\theta_1,t_1)&space;\\&space;x_t(E,\theta_2,t_2)&&space;y_t(E,\theta_2,t_2)&space;\\&space;&&space;&space;\\&space;&&space;&space;\\&space;x_t(E,\theta_n,t_n)&&space;y_t(E,\theta_n,t_n)&space;\\\end{bmatrix}" title="http://latex.codecogs.com/svg.latex?\begin{bmatrix} \theta_1&t_1 \\\theta_2 &t_2 \\ & \\ & \\ \theta_n&t_n \\\end{bmatrix},\begin{bmatrix}x_t(E,\theta_1,t_1) & y_t(E,\theta_1,t_1) \\ x_t(E,\theta_2,t_2)& y_t(E,\theta_2,t_2) \\ & \\ & \\ x_t(E,\theta_n,t_n)& y_t(E,\theta_n,t_n) \\\end{bmatrix}" />
 
 
-In the Machine learning process, we use (x,y) as the input and (<img src="http://latex.codecogs.com/svg.latex?\theta" title="http://latex.codecogs.com/svg.latex?\theta" />,t) as the output. After the training process, we can use the model to predict (<img src="http://latex.codecogs.com/svg.latex?\theta" title="http://latex.codecogs.com/svg.latex?\theta" />,t) for any given (x,y).
+In the Machine learning process, we use (x,y) as the input and (<img src="http://latex.codecogs.com/svg.latex?\theta" title="http://latex.codecogs.com/svg.latex?\theta" />,t) as the output. After the training process, we can use the model to predict (<img src="http://latex.codecogs.com/svg.latex?\theta" title="http://latex.codecogs.com/svg.latex?\theta" />,t) for any given (x,y). These predcited data can be "good guesses" for minimization algorithm.
 
 Note that this is a toy model and can be generalized to more complicated motion.
 
 In the following figure, I show the exact and predicted (<img src="http://latex.codecogs.com/svg.latex?\theta" title="http://latex.codecogs.com/svg.latex?\theta" />,t) data for some (x,y) test data. 
 
 ![pytorch_multivar](pytorch_multivar.gif)
+
+Overall, the predicted data approach the exact values over the iterations. But still we can see there are some outliers. 
