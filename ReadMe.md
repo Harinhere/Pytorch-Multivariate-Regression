@@ -16,4 +16,4 @@ Note that this is a toy model and can be generalized to more complicated motion.
 
 In the following figure, I show the exact and predicted (<img src="http://latex.codecogs.com/svg.latex?\theta" title="http://latex.codecogs.com/svg.latex?\theta" />,t) data for some (x,y) test data. 
 
-!(pytorch_multivar)[pytorch_multivar.gif)
+![pytorch_multivar](pytorch_multivar.gif)
